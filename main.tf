@@ -360,7 +360,7 @@ data "aws_iam_policy_document" "lambda_rds_vpc_public_subnet" {
 }
 
 module "lambda_rds_vpc_public_subnet" {
-  source = "git::https://github.com/plus3it/terraform-aws-lambda.git?ref=v1.1.0"
+  source = "git::https://github.com/plus3it/terraform-aws-lambda.git?ref=v1.2.0"
 
   function_name = "config_rule_rds_vpc_public_subnet"
   description   = "Checks that no RDS Instances are in a Public Subnet"
