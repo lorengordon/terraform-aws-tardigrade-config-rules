@@ -497,7 +497,7 @@ data "aws_iam_policy_document" "lambda_iam_mfa_for_console_access" {
 }
 
 module "lambda_iam_mfa_for_console_access" {
-  source = "git::https://github.com/plus3it/terraform-aws-lambda.git?ref=v1.1.0"
+  source = "git::https://github.com/plus3it/terraform-aws-lambda.git?ref=v1.2.0"
 
   function_name = "config_rule_iam_mfa_for_console_access"
   description   = "Checks that all IAM users with console access have at least one MFA device"
