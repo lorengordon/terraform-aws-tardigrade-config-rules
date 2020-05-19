@@ -286,7 +286,7 @@ data "aws_iam_policy_document" "lambda_iam_access_key_rotation_check" {
 }
 
 module "lambda_iam_access_key_rotation_check" {
-  source = "git::https://github.com/plus3it/terraform-aws-lambda.git?ref=v1.1.0"
+  source = "git::https://github.com/plus3it/terraform-aws-lambda.git?ref=v1.2.0"
 
   function_name = "config_rule_iam_access_key_rotation_check"
   description   = "Checks that IAM User Access Keys have been rotated within the specified number of days"
