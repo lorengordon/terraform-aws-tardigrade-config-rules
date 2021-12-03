@@ -21,7 +21,7 @@ module "create_config_rules" {
 }
 
 module "config" {
-  source = "git::https://github.com/plus3it/terraform-aws-tardigrade-config.git?ref=3.0.0"
+  source = "git::https://github.com/plus3it/terraform-aws-tardigrade-config.git?ref=3.0.1"
 
   config_bucket = aws_s3_bucket.this.id
 }
