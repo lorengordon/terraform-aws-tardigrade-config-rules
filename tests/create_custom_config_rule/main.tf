@@ -52,7 +52,7 @@ module "vendor" {
 }
 
 module "config" {
-  source = "git::https://github.com/plus3it/terraform-aws-tardigrade-config.git?ref=3.0.2"
+  source = "git::https://github.com/plus3it/terraform-aws-tardigrade-config.git?ref=4.0.0"
 
   config_bucket = aws_s3_bucket.this.id
 }
